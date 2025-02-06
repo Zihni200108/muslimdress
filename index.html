@@ -211,9 +211,7 @@
       <!-- hero -->
       <div
         class="hero min-h-screen"
-        style="
-          background-image: url('assets/images/mainimg.jpg');
-        "
+        style="background-image: url('assets/images/mainimg.jpg')"
       >
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-neutral-content text-center">
@@ -229,8 +227,24 @@
         </div>
       </div>
 
+      <!-- top description -->
+      <div class="hero min-h-100">
+        <div class="container max-w-3xl hero-content flex-col lg:flex-row">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Box Office News!</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
       <!-- highlight produk -->
-      <div class="mt-5 grid grid-cols-1 md:grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-2">
         <!-- banner highlight -->
         <div class="bg-base-200 flex items-center text-center">
           <div class="">
@@ -245,56 +259,70 @@
         </div>
 
         <!-- carousel highlight -->
-        <div class="carousel">
-          <div class="carousel-item max-w-2xs:">
-            <img
-              src="assets/images/slide1.jpg"
-              alt="Burger" class="max-w-52"
-            />
-          </div>
-          <div class="carousel-item max-w-2xs">
-            <img
-              src="assets/images/slide2.jpg"
-              alt="Burger" class="max-w-52"
-            />
-          </div>
-          <div class="carousel-item max-w-2xs">
-            <img
-              src="assets/images/slide3.jpg"
-              alt="Burger" class="max-w-52"
-            />
-          </div>
-          <div class="carousel-item max-w-2xs">
-            <img
-              src="assets/images/slide1.jpg"
-              alt="Burger" class="max-w-52"
-            />
-          </div>
-          <div class="carousel-item max-w-2xs">
-            <img
-              src="assets/images/slide2.jpg"
-              alt="Burger" class="max-w-52"
-            />
-          </div>
-          <div class="carousel-item max-w-2xs">
-            <img
-              src="assets/images/slide3.jpg"
-              alt="Burger" class="max-w-52"
-            />
+        <div class="carousel overflow-hidden relative">
+          <div
+            class="carousel-wrapper flex transition-transform duration-500 ease-in-out"
+          >
+            <div class="carousel-item max-w-2xs:">
+              <img
+                src="assets/images/slide1.jpg"
+                alt="Burger"
+                class="max-w-52"
+              />
+            </div>
+            <div class="carousel-item max-w-2xs">
+              <img
+                src="assets/images/slide2.jpg"
+                alt="Burger"
+                class="max-w-52"
+              />
+            </div>
+            <div class="carousel-item max-w-2xs">
+              <img
+                src="assets/images/slide3.jpg"
+                alt="Burger"
+                class="max-w-52"
+              />
+            </div>
+            <div class="carousel-item max-w-2xs">
+              <img
+                src="assets/images/slide1.jpg"
+                alt="Burger"
+                class="max-w-52"
+              />
+            </div>
+            <div class="carousel-item max-w-2xs">
+              <img
+                src="assets/images/slide2.jpg"
+                alt="Burger"
+                class="max-w-52"
+              />
+            </div>
+            <div class="carousel-item max-w-2xs">
+              <img
+                src="assets/images/slide3.jpg"
+                alt="Burger"
+                class="max-w-52"
+              />
+            </div>
+            <div class="carousel-item max-w-2xs">
+              <img
+                src="assets/images/slide1.jpg"
+                alt="Burger"
+                class="max-w-52"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <!-- slide produk 1  -->
       <div
-        class="grid grid-cols-1 md:grid-cols-3 container m-auto px-14 mt-5 gap-2.5"
+        class="grid grid-cols-1 md:grid-cols-3 container m-auto px-14 mt-28 gap-2.5"
       >
         <div class="card bg-base-100 w-96 shadow-xl p-4">
           <figure>
-            <img
-              src="assets/images/highlight1.jpg"
-              alt="Dress1"
-            />
+            <img src="assets/images/highlight1.jpg" alt="Dress1" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">Dress 1</h2>
@@ -308,10 +336,7 @@
         <!-- slide produk 2  -->
         <div class="card bg-base-100 w-96 shadow-xl p-4">
           <figure>
-            <img
-              src="assets/images/highlight2.jpg"
-              alt="Dress2"
-            />
+            <img src="assets/images/highlight2.jpg" alt="Dress2" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">Dress 2</h2>
@@ -325,10 +350,7 @@
         <!-- slide produk 3  -->
         <div class="card bg-base-100 w-96 shadow-xl p-4">
           <figure>
-            <img
-              src="assets/images/highlight3.jpg"
-              alt="Dress3"
-            />
+            <img src="assets/images/highlight3.jpg" alt="Dress3" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">Dress 3</h2>
@@ -341,7 +363,7 @@
       </div>
     </main>
 
-    <footer class="footer bg-base-200 text-base-content p-10">
+    <footer class="footer bg-base-200 text-base-content p-10 mt-28">
       <nav>
         <h6 class="footer-title">Services</h6>
         <a class="link link-hover">Branding</a>
@@ -380,4 +402,21 @@
       </form>
     </footer>
   </body>
+  <script>
+    // const carouselWrapper = document.querySelector(".carousel-wrapper");
+    // const items = document.querySelectorAll(".carousel-item");
+    // let currentIndex = 0;
+
+    // function autoSlide() {
+    //   currentIndex++;
+    //   if (currentIndex >= items.length) {
+    //     currentIndex = 0; // Loop back to the first item
+    //   }
+    //   const offset = -currentIndex * items[0].offsetWidth;
+    //   carouselWrapper.style.transform = `translateX(${offset}px)`;
+    // }
+
+    // // Set auto slide interval (5 seconds)
+    // setInterval(autoSlide, 3000);
+  </script>
 </html>
